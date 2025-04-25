@@ -1,0 +1,7 @@
+{
+  "globalHeaders": {
+    "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; object-src 'none';",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
+  }
+}
