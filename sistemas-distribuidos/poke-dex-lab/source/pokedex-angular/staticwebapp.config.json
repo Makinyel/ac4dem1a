@@ -1,7 +1,11 @@
 {
   "globalHeaders": {
-    "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; object-src 'none';",
-    "X-Frame-Options": "SAMEORIGIN",
-    "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
+    "Content-Security-Policy": "default-src 'self' https://pokeapi.co; connect-src *; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src * data:; font-src 'self';",
+    "X-Frame-Options": "DENY",
+    "Permissions-Policy": "geolocation=(), camera=(), microphone=()",
+    "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload"
+  },
+  "navigationFallback": {
+    "rewrite": "/index.html"
   }
 }
